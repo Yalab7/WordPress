@@ -29,4 +29,4 @@ jobs:
         date=$(date +'%Y-%m-%d_%H-%M-%S')
         tar -czvf app_$date.tar.gz WordPress/
         aws s3 cp app_$date.tar.gz s3://atef-wp-app/
-        aws s3 cp app_$date.tar.gz s3://atef-wp-app/latest.tar.gz --tagging "exclude=true"
+        aws s3 cp app_$date.tar.gz s3://atef-wp-app/latest.tar.gz
